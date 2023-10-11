@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>xyz</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<!-- navbar -->
+<nav>
+	<div class="navigationBar">
+		<img src="logo copy.png" height="100" width="150">
+		<!--<ul><ul>
+			
+			<li>
+				<a href="#"><h1>Why CC</h1></a>
+				<ul class="dropdown">
+					<li><a href="#" class="item item1">Personal</a></li>
+					<li><a href="#" class="item item2">StartUp</a></li>
+					<li><a href="#" class="item item2">Freelance</a></li>
+					<li><a href="#" class="item item2">Scaleups</a></li>
+				</ul>
+	</li>
+</ul></ul>-->
+	
+		<li><a href="index.html">Home</a></li>
+		<li><a href="about.html">About Us</a></li>
+		<li><a href="services.html">Services</a></li>
+		<li><a href="contact.html">Contact Us</a></li>
+	
+
+		<!--<button class="btn1"><a href="launch.html">LAUNCH</a></button>-->
+	</div>
+</nav>
+
+<!-- div2 -->
+<div class="container2">
+	<h2>Build sites <br>of any size, <br>solo or with your team.</h2>
+</div>
+
+<!-- div 1 -->
+<div class="container">
+    <div class="content-wrapper">
+        <h1>Start your dream<br>site with AI.</h1>
+        <form id="aiForm">
+            <div class="input-container">
+                <input type="text" id="inputField" placeholder="Give Your Description">
+                <input type="submit" class="btn2" value="Start With AI">
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+<!-- script--->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("aiForm");
+        const inputField = document.getElementById("inputField");
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault(); // Prevent the form from submitting in the default way
+
+            const userInput = inputField.value.toLowerCase(); // Get user input in lowercase for case-insensitivity
+
+            // Check if the user input contains the specified prompt
+            if (userInput.includes("create a website like youtube")) {
+                // Redirect to your YouTube clone website
+                window.location.href = "youtube/brahmjot.html";
+            } 
+        });
+    });
+    
+    document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("aiForm");
+        const inputField = document.getElementById("inputField");
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault(); // Prevent the form from submitting in the default way
+
+            const userInput = inputField.value.toLowerCase(); // Get user input in lowercase for case-insensitivity
+
+            // Check if the user input contains the specified prompt
+            if (userInput.includes("create a ecommerce website")) {
+                // Redirect to your YouTube clone website
+                window.location.href = "website2/index.html";
+            }
+        });
+    });
+    
+    document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("aiForm");
+        const inputField = document.getElementById("inputField");
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault(); // Prevent the form from submitting in the default way
+
+            const userInput = inputField.value.toLowerCase(); // Get user input in lowercase for case-insensitivity
+
+            // Check if the user input contains the specified prompt
+            if (userInput.includes("create a chatbot whith html and css")) {
+                // Redirect to your YouTube clone website
+                window.location.href = "website 3/index.html";
+            }
+        });
+    });
+</script>
+
+
+
+</body>
+</html>
